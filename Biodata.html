@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>ZUL KELANTAN</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Poppins', sans-serif;
+      background: linear-gradient(to right, #000000, #1a1a1a);
+      color: white;
+    }
+
+    nav {
+      background: #ff0000;
+      padding: 15px 0;
+      text-align: center;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin: 0 20px;
+      font-size: 18px;
+      transition: color 0.4s ease, transform 0.4s ease;
+    }
+
+    nav a:hover {
+      color: #ffd1d1;
+      transform: scale(1.1);
+    }
+
+    nav a:not(:last-child)::after {
+      content: "|";
+      margin-left: 20px;
+      color: gold;
+    }
+
+    h1 {
+      text-align: center;
+      margin-top: 40px;
+      font-size: 32px;
+    }
+
+    .center-img {
+      display: block;
+      margin: 30px auto;
+      width: 350px;
+      height: 350px;
+      border-radius: 10px;
+      transition: transform 0.4s ease;
+    }
+
+    .center-img:hover {
+      transform: scale(1.2);
+    }
+
+    table {
+      border-collapse: collapse;
+      margin: 40px auto;
+      background: white;
+      color: black;
+      width: 80%;
+    }
+
+    th, td {
+      border: 1px solid black;
+      padding: 10px;
+      text-align: left;
+    }
+
+    caption {
+      font-size: 24px;
+      font-weight: bold;
+      text-decoration: underline;
+      margin-bottom: 10px;
+      color: white;
+    }
+
+    ul, ol {
+      margin: 5px 0;
+    }
+
+    video {
+      display: block;
+      margin: 20px auto;
+      border: 2px solid white;
+      border-radius: 8px;
+    }
+
+    .video-caption {
+      text-align: center;
+      font-size: 20px;
+      color: white;
+    }
+
+    .friend {
+      font-weight: bold;
+    }
+
+    .social-icon {
+      display: block;
+      margin: auto;
+      width: 100px;
+      height: auto;
+      transition: transform 0.4s;
+    }
+
+    .social-icon:hover {
+      transform: scale(1.2);
+    }
+
+    footer {
+      background-color: red;
+      color: #ccc;
+      padding: 30px 0;
+      text-align: center;
+      font-family: 'Poppins', sans-serif;
+      margin-top: 50px;
+    }
+  </style>
+</head>
+<body>
+
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="Biodata.html">Profile</a>
+    <a href="Education.html">Friend</a>
+    <a href="Experience.html">Experience</a>
+    <a href="Family.html">Family</a>
+    <a href="Gallery.html">Gallery</a>
+  </nav>
+
+  <h1><em>About Me.</em></h1>
+  <img src="MOTOR 1.jpg" alt="Zul Image" class="center-img">
+
+  <table>
+    <tr>
+      <td colspan="2" style="text-align: center;"><strong>ZULHILMI BIN SHAMSURI</strong></td>
+    </tr>
+    <tr>
+      <th>Age</th>
+      <td>21</td>
+    </tr>
+    <tr>
+      <th>Birth Date</th>
+      <td>28 / 01 / 2004</td>
+    </tr>
+    <tr>
+      <th>Phone Number</th>
+      <td>01115946848</td>
+    </tr>
+    <tr>
+      <th>Favourite Food & Beverage</th>
+      <td>
+        <ul>
+          <li><strong>Favourite Food</strong>
+            <ol>
+              <li>Nasi Dagang</li>
+              <li>Daging Kicap</li>
+              <li>Mee Goreng Mamak</li>
+            </ol>
+          </li>
+          <li><strong>Favourite Beverage</strong>
+            <ol>
+              <li>Barli Ais</li>
+              <li>Milo Ais</li>
+              <li>Bandung Laici</li>
+            </ol>
+          </li>
+        </ul>
+      </td>
+    </tr>
+    <tr>
+      <th>Favourite Song</th>
+      <td>
+        <p>
+          Kamnh – <a href="https://youtu.be/nOeJuoFs6sM?si=FbbqxhzoLS0DNmXd" target="_blank" style="color: blue; text-decoration: underline;">Watch on YouTube</a>
+        </p>
+      </td>
+    </tr>
+    <tr>
+      <th rowspan="3">Favourite Friends</th>
+      <td class="friend">TAUFIQ</td>
+    </tr>
+    <tr>
+      <td class="friend">ZAHIRUL</td>
+    </tr>
+    <tr>
+      <td class="friend">ISMAIL</td>
+    </tr>
+  </table>
+
+  <footer>
+    <div class="footer-container">
+      <p>241570015 ZULHILMI BIN SHAMSURI.</p>
+    </div>
+  </footer>
+
+</body>
+</html>

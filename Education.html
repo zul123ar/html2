@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>ZUL KELANTAN | My Friends</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap" rel="stylesheet">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Poppins', sans-serif;
+      background: linear-gradient(to right, #000000, #1a1a1a);
+      color: white;
+    }
+
+    nav {
+      background: #ff0000;
+      padding: 15px 0;
+      text-align: center;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin: 0 15px;
+      font-size: 18px;
+      transition: all 0.4s ease;
+    }
+
+    nav a:hover {
+      color: #ffd1d1;
+      transform: scale(1.1);
+    }
+
+    nav a:not(:last-child)::after {
+      content: "|";
+      margin-left: 15px;
+      color: gold;
+    }
+
+    h1 {
+      text-align: center;
+      margin: 40px 0 20px;
+      font-size: 36px;
+      color: #fff;
+    }
+
+    .friends-container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 40px;
+      padding: 20px;
+    }
+
+    .friend-card {
+      background-color: #1a1a1a;
+      border-radius: 12px;
+      padding: 20px;
+      width: 280px;
+      text-align: center;
+      box-shadow: 0 6px 12px rgba(255, 255, 255, 0.05);
+      transition: transform 0.3s ease;
+    }
+
+    .friend-card:hover {
+      transform: translateY(-8px);
+    }
+
+    .friend-card img {
+      width: 150px;
+      height: 150px;
+      border-radius: 50%;
+      object-fit: cover;
+      margin-bottom: 15px;
+      border: 3px solid #ff0000;
+    }
+
+    .friend-card p {
+      font-size: 16px;
+      line-height: 1.5;
+      color: #ddd;
+    }
+
+    footer {
+      background-color: red;
+      color: #fff;
+      padding: 30px 0;
+      text-align: center;
+      font-size: 14px;
+      margin-top: 60px;
+    }
+
+    @media (max-width: 600px) {
+      .friend-card {
+        width: 90%;
+      }
+
+      nav a {
+        display: block;
+        margin: 10px 0;
+      }
+
+      nav a:not(:last-child)::after {
+        content: none;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="Biodata.html">Profile</a>
+    <a href="Education.html">Friend</a>
+    <a href="Experience.html">Experience</a>
+    <a href="Family.html">Family</a>
+    <a href="Gallery.html">Gallery</a>
+  </nav>
+
+  <h1><em>My Friends.</em></h1>
+
+  <div class="friends-container">
+    <div class="friend-card">
+      <img src="MAT.jpg" alt="Ahmad">
+      <p><strong>Ahmad</strong> is from Selangor and he is 21 years old. He loves to eat ramen and drink matcha. Ahmad enjoys going cafe hunting during his free time.</p>
+    </div>
+
+    <div class="friend-card">
+      <img src="TAUFIQ.jpg" alt="Taufiq">
+      <p><strong>Taufiq</strong> is from Sabah and he is also 21 years old. He’s a great person, an expert at Mobile Legends, a good cook, and always willing to help others.</p>
+    </div>
+  </div>
+
+  <footer>
+    <p>241570015 ZULHILMI BIN SHAMSURI.</p>
+  </footer>
+
+</body>
+</html>
